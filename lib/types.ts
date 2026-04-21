@@ -1,4 +1,4 @@
-export type CategoryId = "entrees" | "plats" | "grillades" | "desserts" | "boissons";
+export type CategoryId = "salees" | "sucrees" | "formules" | "viennoiseries" | "oeufs" | "boissons";
 export type BadgeKind = "signature" | "spicy" | "today";
 export type PhKey = "ph-1" | "ph-2" | "ph-3" | "ph-4" | "ph-5";
 

@@ -17,13 +17,13 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Chez Madina — Menu digital",
-  description: "La cuisine africaine revisitée, dressée pour vous, à votre table.",
+  title: "Le Bambou — Menu digital",
+  description: "Votre Cuisine Chez Nous — Kipe, Commune de Ratoma, Conakry.",
   manifest: "/manifest.json",
   other: {
     "mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "apple-mobile-web-app-title": "Chez Madina",
+    "apple-mobile-web-app-title": "Le Bambou",
     "theme-color": "#0A0A0A",
   },
 };

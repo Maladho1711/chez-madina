@@ -55,7 +55,7 @@ export function Menu({ active }: { active: boolean }) {
       <div className="top-header">
         <div className="brand">
           <span className="eyebrow">Table 07 · Carte</span>
-          <span className="name">Chez Madina</span>
+          <span className="name">Le Bambou</span>
         </div>
         <button
           ref={cartBtnRef}

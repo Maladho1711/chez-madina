@@ -18,13 +18,11 @@ export function Welcome({ active }: { active: boolean }) {
       const p = document.createElement("span");
       p.className = "particle";
       const size = 2 + Math.random() * 4;
-      const tx = `${Math.random() * 100}%`;
-      const tx2 = `${(Math.random() - 0.5) * 40}px`;
       p.style.width = `${size}px`;
       p.style.height = `${size}px`;
-      p.style.left = tx;
+      p.style.left = `${Math.random() * 100}%`;
       p.style.setProperty("--tx", "0px");
-      p.style.setProperty("--tx2", tx2);
+      p.style.setProperty("--tx2", `${(Math.random() - 0.5) * 40}px`);
       p.style.animationDuration = `${7 + Math.random() * 8}s`;
       p.style.animationDelay = `${-Math.random() * 10}s`;
       p.style.opacity = (0.3 + Math.random() * 0.5).toFixed(2);
@@ -41,22 +39,25 @@ export function Welcome({ active }: { active: boolean }) {
             <span className="dot" /> Table · 07
           </div>
           <div className="monogram">
+            {/* Monogramme LB — Le Bambou */}
             <svg
               className="mono-svg"
               width="112"
               height="112"
               viewBox="0 0 112 112"
               fill="none"
-              aria-label="Chez Madina monogram"
+              aria-label="Le Bambou monogram"
             >
-              <circle className="mono-ring mono-ring-1" cx="56" cy="56" r="53" stroke="#C9A961" strokeOpacity=".55" strokeWidth="1" />
-              <circle className="mono-ring mono-ring-2" cx="56" cy="56" r="47" stroke="#C9A961" strokeOpacity=".2" strokeWidth="1" />
-              <g className="mono-letters" fill="#C9A961">
-                <path d="M48 34c-9 0-15 7-15 22s6 22 15 22c6.2 0 10.6-2.6 13-7.8l-5.2-2.6c-1.6 3.2-4.2 5-7.8 5-5.4 0-9-5.8-9-16.6s3.6-16.6 9-16.6c3.4 0 6 1.6 7.4 5l5.4-2.6C58.4 36.4 54 34 48 34z" />
-                <path d="M64 34h6l6.2 22.4L82.4 34H88v44h-5.4V45.2L76.6 66h-3.6l-6-20.8V78H62V34h2z" />
+              <circle className="mono-ring mono-ring-1" cx="56" cy="56" r="53" stroke="#C17A3A" strokeOpacity=".55" strokeWidth="1" />
+              <circle className="mono-ring mono-ring-2" cx="56" cy="56" r="47" stroke="#C17A3A" strokeOpacity=".2" strokeWidth="1" />
+              <g className="mono-letters" fill="#C17A3A">
+                {/* L */}
+                <path d="M28 34h6v38H50v5H28V34z" />
+                {/* B */}
+                <path d="M56 34h14c6 0 10 3.5 10 9 0 3.5-1.8 6-4.5 7.5C79 52 81 55 81 59c0 6-4.5 10-11 10H56V34zm6 5v11h7.5c2.8 0 4.5-1.8 4.5-5.5S72.3 39 69.5 39H62zm0 16v13h8c3.2 0 5-2 5-6.5S73.2 55 70 55h-8z" />
               </g>
-              <circle className="mono-dot mono-dot-top" cx="56" cy="12" r="1.5" fill="#C9A961" />
-              <circle className="mono-dot mono-dot-bot" cx="56" cy="100" r="1.5" fill="#C9A961" />
+              <circle className="mono-dot mono-dot-top" cx="56" cy="12" r="1.5" fill="#C17A3A" />
+              <circle className="mono-dot mono-dot-bot" cx="56" cy="100" r="1.5" fill="#C17A3A" />
             </svg>
           </div>
         </div>
@@ -64,14 +65,15 @@ export function Welcome({ active }: { active: boolean }) {
         <div className="welcome-mid">
           <div className="hello">Bienvenue</div>
           <h1 className="shimmer">
-            <span className="word w1">Chez</span> <em className="word w2">Madina</em>
+            <span className="word w1">Le</span>{" "}
+            <em className="word w2">Bambou</em>
           </h1>
           <div className="ornament">
             <span className="line" />
             <span className="dia" />
             <span className="line" />
           </div>
-          <p>La cuisine africaine revisitée, dressée pour vous, à votre table.</p>
+          <p>Votre cuisine chez nous — Kipe, Conakry.</p>
         </div>
 
         <div className="welcome-bottom">

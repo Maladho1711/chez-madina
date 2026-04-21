@@ -39,7 +39,7 @@ const newOrderNo = (): string => {
 
 export const useApp = create<AppState>((set, get) => ({
   screen: "welcome",
-  activeCat: "plats",
+  activeCat: "salees",
   cart: [],
   detail: null,
   firstName: "",
