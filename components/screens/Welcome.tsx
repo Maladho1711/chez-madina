@@ -38,26 +38,51 @@ export function Welcome({ active }: { active: boolean }) {
           <div className="table-badge">
             <span className="dot" /> Table · 07
           </div>
+
+          {/* Monogramme circulaire — Le Bambou */}
           <div className="monogram">
-            {/* Monogramme LB — Le Bambou */}
             <svg
               className="mono-svg"
               width="112"
               height="112"
               viewBox="0 0 112 112"
               fill="none"
-              aria-label="Le Bambou monogram"
+              aria-label="Le Bambou"
             >
-              <circle className="mono-ring mono-ring-1" cx="56" cy="56" r="53" stroke="#C17A3A" strokeOpacity=".55" strokeWidth="1" />
-              <circle className="mono-ring mono-ring-2" cx="56" cy="56" r="47" stroke="#C17A3A" strokeOpacity=".2" strokeWidth="1" />
-              <g className="mono-letters" fill="#C17A3A">
-                {/* L */}
-                <path d="M28 34h6v38H50v5H28V34z" />
-                {/* B */}
-                <path d="M56 34h14c6 0 10 3.5 10 9 0 3.5-1.8 6-4.5 7.5C79 52 81 55 81 59c0 6-4.5 10-11 10H56V34zm6 5v11h7.5c2.8 0 4.5-1.8 4.5-5.5S72.3 39 69.5 39H62zm0 16v13h8c3.2 0 5-2 5-6.5S73.2 55 70 55h-8z" />
+              <g className="mono-letters">
+                <text
+                  x="56" y="50"
+                  textAnchor="middle"
+                  fontFamily="Cormorant Garamond, serif"
+                  fontWeight="700"
+                  fontSize="22"
+                  fill="rgba(251,246,238,0.95)"
+                  letterSpacing="2"
+                >
+                  LE
+                </text>
+                <text
+                  x="56" y="72"
+                  textAnchor="middle"
+                  fontFamily="Cormorant Garamond, serif"
+                  fontWeight="700"
+                  fontSize="20"
+                  fill="rgba(251,246,238,0.95)"
+                  letterSpacing="1"
+                >
+                  BAMBOU
+                </text>
+                <text
+                  x="56" y="87"
+                  textAnchor="middle"
+                  fontFamily="Cormorant Garamond, serif"
+                  fontStyle="italic"
+                  fontSize="7"
+                  fill="rgba(251,246,238,0.75)"
+                >
+                  Votre Cuisine Chez Nous
+                </text>
               </g>
-              <circle className="mono-dot mono-dot-top" cx="56" cy="12" r="1.5" fill="#C17A3A" />
-              <circle className="mono-dot mono-dot-bot" cx="56" cy="100" r="1.5" fill="#C17A3A" />
             </svg>
           </div>
         </div>
@@ -73,7 +98,7 @@ export function Welcome({ active }: { active: boolean }) {
             <span className="dia" />
             <span className="line" />
           </div>
-          <p>Votre cuisine chez nous — Kipe, Conakry.</p>
+          <p>Votre cuisine chez nous — Brunch, formules et plats signature à votre table.</p>
         </div>
 
         <div className="welcome-bottom">

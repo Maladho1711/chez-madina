@@ -1,11 +1,11 @@
 {
-  "name": "Chez Madina — Menu digital",
-  "short_name": "Chez Madina",
-  "description": "La cuisine africaine revisitée, dressée pour vous, à votre table.",
+  "name": "Le Bambou — Menu digital",
+  "short_name": "Le Bambou",
+  "description": "Votre Cuisine Chez Nous — Brunch, formules et plats signature à table.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0A0A0A",
-  "theme_color": "#0A0A0A",
+  "background_color": "#FBF6EE",
+  "theme_color": "#A66B40",
   "orientation": "portrait",
   "icons": [
     {

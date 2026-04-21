@@ -1,6 +1,9 @@
 export type CategoryId = "salees" | "sucrees" | "formules" | "viennoiseries" | "oeufs" | "boissons";
 export type BadgeKind = "signature" | "spicy" | "today";
-export type PhKey = "ph-1" | "ph-2" | "ph-3" | "ph-4" | "ph-5";
+export type PhKey =
+  | "ph-1" | "ph-2" | "ph-3" | "ph-4" | "ph-5" | "ph-6" | "ph-7"
+  | "ph-8" | "ph-9" | "ph-10" | "ph-11" | "ph-12" | "ph-13" | "ph-14"
+  | "ph-15" | "ph-16" | "ph-17" | "ph-18" | "ph-19" | "ph-20" | "ph-21";
 
 export interface Category {
   id: CategoryId;

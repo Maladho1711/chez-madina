@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useApp } from "@/lib/store";
 
 export function StatusBar() {
+  const screen = useApp((s) => s.screen);
   const [time, setTime] = useState("21:47");
 
   useEffect(() => {
@@ -17,8 +19,13 @@ export function StatusBar() {
     return () => clearInterval(id);
   }, []);
 
+  const isWelcome = screen === "welcome";
+
   return (
-    <div className="statusbar">
+    <div
+      className="statusbar"
+      style={{ color: isWelcome ? "rgba(245,239,224,0.9)" : "var(--ivory)" }}
+    >
       <span>{time}</span>
       <span className="right">
         <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor" aria-hidden>
